@@ -1,0 +1,10 @@
+version: '3'
+services:
+    web:
+         build: ./Dockerbuild
+         image: enzoflask
+         ports:
+             - '8081:5000'
+         volumes:
+             - ./app:/code
+
